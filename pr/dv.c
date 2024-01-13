@@ -17,6 +17,7 @@ void main(){
             costmat[i][i] = 0;
             rt[i].dist[j] = costmat[i][j];
             rt[i].from[j] = j;
+            count++;
         }
 
     do{
