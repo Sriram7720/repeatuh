@@ -17,7 +17,7 @@ void main(){
             costmat[i][i] = 0;
             rt[i].dist[j] = costmat[i][j];
             rt[i].from[j] = j;
-            count++;
+            
         }
 
     do{
@@ -35,6 +35,7 @@ void main(){
         printf("\n\nfor node %d", i+1);
             for(j=0;j<nodes;j++)
                  printf("\n\n %d via %d distance %d \n\n",j+1,rt[i].from[j]+1,rt[i].dist[j]);
+count++;
     }
 
 }
