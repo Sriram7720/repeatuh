@@ -29,13 +29,14 @@ void main(){
                         if(rt[i].dist[j] > rt[i].dist[k]+rt[k].dist[j]){
                             rt[i].dist[j] = rt[i].dist[k]+rt[k].dist[j];
                             rt[i].dist[j] = rt[i].dist[k];
-                        }
+                            
+count++                        }
     }while(count != 0);
     for(i=0;i<nodes;i++){
         printf("\n\nfor node %d", i+1);
             for(j=0;j<nodes;j++)
                  printf("\n\n %d via %d distance %d \n\n",j+1,rt[i].from[j]+1,rt[i].dist[j]);
-count++;
+
     }
 
 }
