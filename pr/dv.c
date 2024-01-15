@@ -29,8 +29,9 @@ void main(){
                         if(rt[i].dist[j] > rt[i].dist[k]+rt[k].dist[j]){
                             rt[i].dist[j] = rt[i].dist[k]+rt[k].dist[j];
                             rt[i].dist[j] = rt[i].dist[k];
+                            count++;
                             
-count++                        }
+                }
     }while(count != 0);
     for(i=0;i<nodes;i++){
         printf("\n\nfor node %d", i+1);
